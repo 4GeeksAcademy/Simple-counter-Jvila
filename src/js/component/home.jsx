@@ -2,23 +2,28 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import { Counter } from "./Counter.jsx";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div style={{
+				
+			backgroundColor: "rgba(248, 63, 21, 0.93)", // Fondo amarillo con opacidad
+		}}>
+			<div>
+				<h1 className="text-center mt-5  ">SIMPLE COUNTER </h1>
+			</div>
+			
+			<div>
+				<Counter />
+			</div>
+			<div>
+				<h1 className="text-center mt-5" style={{
+				
+				backgroundColor: "rgba(248, 63, 21, 0.93)", // Fondo amarillo con opacidad
+			}}>Jvila</h1>
+			</div>
 		</div>
 	);
 };
